@@ -66,7 +66,7 @@ function MyApp(props: AppProps) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="MEMA - A next evolution Community-DAO token on BNB Smart Chain (BSC)"
+          content="MEMA - A next evolution Community token on BNB Smart Chain (BSC)"
         />
         <title>MemaSwap</title>
       </Head>

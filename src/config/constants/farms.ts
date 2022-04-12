@@ -20,7 +20,7 @@ const farms: SerializedFarmConfig[] = [
   },
   {
     pid: 251,
-    lpSymbol: 'COMING SOON',
+    lpSymbol: 'COMING-SOON',
     lpAddresses: {
       97: '',
       56: '0x96479D99fb9f2C9585787174B4b1cAB5BD36eBeE',
