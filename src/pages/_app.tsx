@@ -57,18 +57,18 @@ function MyApp(props: AppProps) {
           name="description"
           content="A new way for players to explore Game-Fi experiences. Stake, Earn, Play, Win, Vote and more..."
         />
-        <meta name="theme-color" content="#F0B90B" />
+        <meta name="theme-color" content="#4F8A39" />
         <meta name="twitter:image" content="logo.png" /> {/* #todo */}
         <meta
           name="twitter:description"
-          content="Built for the Starsharks community from the community. Hold SHARKO tokens to earn $SEA, win Sharks NFT and more..."
+          content="Built for the MemaSwap community from the community. Hold MEMA tokens to earn $MEMA, win NFT and more..."
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Sharknado - A next evolution Community-DAO token on BNB Smart Chain (BSC)"
+          content="MEMA - A next evolution Community-DAO token on BNB Smart Chain (BSC)"
         />
-        <title>Sharknado</title>
+        <title>MemaSwap</title>
       </Head>
       <Providers store={store}>
         <Blocklist>
