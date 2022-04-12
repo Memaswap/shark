@@ -22,7 +22,7 @@ const farms: SerializedFarmConfig[] = [
     pid: 251,
     lpSymbol: 'COMING SOON',
     lpAddresses: {
-      97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
+      97: '',
       56: '0x96479D99fb9f2C9585787174B4b1cAB5BD36eBeE',
     },
     token: serializedTokens.met,

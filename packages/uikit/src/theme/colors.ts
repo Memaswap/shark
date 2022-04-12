@@ -11,9 +11,9 @@ export const baseColors = {
 };
 
 export const additionalColors = {
-  binance: "#F0B90B",
+  binance: "#4F8A39",
   overlay: "#452a7a",
-  gold: "#FFC700",
+  gold: "#4F8A39",
   silver: "#B2B2B2",
   bronze: "#E7974D",
 };
@@ -46,7 +46,7 @@ export const lightColors: Colors = {
     blue: "linear-gradient(180deg, #00707F 0%, #19778C 100%)",
     violet: "linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)",
     violetAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
-    gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
+    gold: "linear-gradient(180deg, #4F8A39 0%, #4F8A39 100%)",
   },
 };
 
@@ -78,6 +78,6 @@ export const darkColors: Colors = {
     blue: "linear-gradient(180deg, #00707F 0%, #19778C 100%)",
     violet: "linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)",
     violetAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
-    gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
+    gold: "linear-gradient(180deg, #4F8A39 0%, #4F8A39 100%)",
   },
 };
