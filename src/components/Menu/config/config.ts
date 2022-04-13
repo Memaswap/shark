@@ -109,7 +109,7 @@ const config: (t: ContextApi['t'], code: string) => ConfigMenuItemsType[] = (t, 
   // },
   {
     label: t('NFT'),
-    href: `#`,
+    href: '/nfts',
     icon: NftIcon,
     fillIcon: NftFillIcon,
     items: [

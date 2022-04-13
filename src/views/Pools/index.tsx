@@ -4,7 +4,7 @@ import { BigNumber as EthersBigNumber } from '@ethersproject/bignumber'
 import { formatUnits } from '@ethersproject/units'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
-import { Heading, Flex, Image, Text } from '@pancakeswap/uikit'
+import { Heading, Flex, Image, Text, Spinner } from '@pancakeswap/uikit'
 import orderBy from 'lodash/orderBy'
 import partition from 'lodash/partition'
 import { useTranslation } from 'contexts/Localization'
@@ -326,7 +326,13 @@ const Pools: React.FC = () => {
             <Loading />
           </Flex>
         )}
-        {viewMode === ViewMode.CARD ? cardLayout : tableLayout}
+        {/* {viewMode === ViewMode.CARD ? cardLayout : tableLayout} */}
+        <Heading scale="xl" color="secondary" textAlign="center" marginTop="125px" marginBottom="125px">
+          {t('COMING SOON...')}
+        </Heading>
+        <Flex justifyContent="center">
+          <Spinner />
+        </Flex>
       </Page>
     </>
   )

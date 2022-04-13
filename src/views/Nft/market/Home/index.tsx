@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Box, Button, Flex, Heading, LinkExternal } from '@pancakeswap/uikit'
+import { Box, Button, Flex, Heading, LinkExternal, Spinner } from '@pancakeswap/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import { useTranslation } from 'contexts/Localization'
@@ -80,7 +80,7 @@ const Home = () => {
               {t('NFT Market')}
             </Heading>
             <Heading scale="lg" color="text">
-              {t('Buy and Sell NFTs on BNB Smart Chain')}
+              {t('Buy and Sell NFTs on Binance Smart Chain')}
             </Heading>
             {account && (
               <Button as={NextLinkFromReactRouter} to={`${nftsBaseUrl}/profile/${account.toLowerCase()}`} mt="32px">
@@ -91,7 +91,7 @@ const Home = () => {
           <SearchBar />
         </StyledHeaderInner>
       </StyledPageHeader>
-      {status !== FetchStatus.Fetched ? (
+      {/* {status !== FetchStatus.Fetched ? (
         <PageLoader />
       ) : (
         <PageSection
@@ -115,12 +115,18 @@ const Home = () => {
           />
           <Newest />
         </PageSection>
-      )}
+      )} */}
+      <Heading scale="xl" color="secondary" textAlign="center" marginTop="125px" marginBottom="125px">
+          {t('COMING SOON...')}
+      </Heading>
+      <Flex justifyContent="center">
+          <Spinner />
+      </Flex>
       <Gradient p="64px 0">
-        <SectionsWithFoldableText header={t('FAQs')} config={config(t)} m="auto" />
-        <LinkExternal href="https://docs.pancakeswap.finance/contact-us/nft-market-applications" mx="auto" mt="16px">
+        {/* <SectionsWithFoldableText header={t('FAQs')} config={config(t)} m="auto" /> */}
+        {/* <LinkExternal href="" mx="auto" mt="16px">
           {t('Apply to NFT Market!')}
-        </LinkExternal>
+        </LinkExternal> */}
       </Gradient>
     </>
   )

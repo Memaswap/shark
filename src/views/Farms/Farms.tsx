@@ -1,7 +1,7 @@
 import { useEffect, useCallback, useState, useMemo, useRef, createContext } from 'react'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
-import { Image, Heading, RowType, Toggle, Text, Button, ArrowForwardIcon, Flex } from '@pancakeswap/uikit'
+import { Image, Heading, RowType, Toggle, Text, Button, ArrowForwardIcon, Flex, Spinner } from '@pancakeswap/uikit'
 import { ChainId } from '@pancakeswap/sdk'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import styled from 'styled-components'
@@ -28,6 +28,12 @@ import Table from './components/FarmTable/FarmTable'
 import FarmTabButtons from './components/FarmTabButtons'
 import { RowProps } from './components/FarmTable/Row'
 import { DesktopColumnSchema, FarmWithStakedValue } from './components/types'
+
+const Wrapper = styled(Page)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
 const ControlContainer = styled.div`
   display: flex;
@@ -404,14 +410,20 @@ const Farms: React.FC = ({ children }) => {
             </LabelWrapper>
           </FilterContainer>
         </ControlContainer>
-        {renderContent()}
+        {/* {renderContent()} */}
         {account && !userDataLoaded && stakedOnly && (
           <Flex justifyContent="center">
             <Loading />
           </Flex>
         )}
         <div ref={observerRef} />
-        <StyledImage src="/images/decorations/3dpan.png" alt="Pancake illustration" width={120} height={103} />
+        <Heading scale="xl" color="secondary" textAlign="center" marginTop="125px" marginBottom="125px">
+          {t('COMING SOON...')}
+        </Heading>
+        <Flex justifyContent="center">
+          <Spinner />
+        </Flex>
+        {/* <StyledImage src="/images/decorations/3dpan.png" alt="Pancake illustration" width={120} height={103} /> */}
       </Page>
     </FarmsContext.Provider>
   )
