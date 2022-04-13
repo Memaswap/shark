@@ -113,11 +113,11 @@ const config: (t: ContextApi['t'], code: string) => ConfigMenuItemsType[] = (t, 
     icon: NftIcon,
     fillIcon: NftFillIcon,
     items: [
-      /* {
-        label: t('Overview'),
-        href: `${nftsBaseUrl}`,
-      },
       {
+        label: t('Marketplace'),
+        href: '/nfts',
+      },
+      /* {
         label: t('Collections'),
         href: `${nftsBaseUrl}/collections`,
       },
