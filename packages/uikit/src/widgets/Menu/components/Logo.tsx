@@ -56,11 +56,11 @@ const Logo: React.FC<Props> = ({ isDark, href }) => {
   return (
     <Flex>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href="https://memaswap.com" aria-label="MemaSwap home page">
+        <StyledLink as="a" href="https://memaswap.org" aria-label="MemaSwap home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink href="https://memaswap.com" as={linkComponent} aria-label="MemaSwap home page">
+        <StyledLink href="https://memaswap.org" as={linkComponent} aria-label="MemaSwap home page">
           {innerLogo}
         </StyledLink>
       )}
